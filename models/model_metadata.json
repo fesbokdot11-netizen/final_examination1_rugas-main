@@ -1,0 +1,75 @@
+{
+  "model_version": "1.0.0",
+  "trained_at": "2026-10-31 23:53:14",
+  "algorithm": "DecisionTreeClassifier in sklearn Pipeline (OneHotEncoder + passthrough numerics)",
+  "sklearn_version": "1.9.1",
+  "training_data": "student_service_requests.csv",
+  "config": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "max_depth": 4,
+    "min_samples_leaf": 5
+  },
+  "features": [
+    "Service_Type",
+    "Requester_Type",
+    "Assigned_Office",
+    "Required_Documents_Complete",
+    "Submission_Weekday",
+    "Queue_Category",
+    "Queue_Length",
+    "SLA_Days"
+  ],
+  "n_labeled": 327,
+  "n_train": 261,
+  "n_test": 66,
+  "metrics": {
+    "accuracy": 0.6515151515151515,
+    "precision": 0.5909090909090909,
+    "recall": 0.8387096774193549,
+    "f1": 0.6933333333333334,
+    "majority_baseline_accuracy": 0.5303030303030303,
+    "fp_rate": 0.5142857142857142,
+    "confusion_matrix": {
+      "TN": 17,
+      "FP": 18,
+      "FN": 5,
+      "TP": 26
+    }
+  },
+  "feature_importances": {
+    "Service_Type": 0.3552800144157839,
+    "Queue_Length": 0.30697430413433346,
+    "Required_Documents_Complete": 0.19328628593323283,
+    "Assigned_Office": 0.07929407937540663,
+    "Submission_Weekday": 0.057479889986396124,
+    "Requester_Type": 0.007685426154847142,
+    "Queue_Category": 0.0,
+    "SLA_Days": 0.0
+  },
+  "categories": {
+    "Service_Type": [
+      "Certification",
+      "Enrollment Assistance",
+      "Finance Clearance",
+      "ID Replacement",
+      "Records",
+      "Scholarship Inquiry"
+    ],
+    "Requester_Type": [
+      "Faculty",
+      "Staff",
+      "Student"
+    ],
+    "Assigned_Office": [
+      "Finance",
+      "Registrar",
+      "Scholarship Office",
+      "Student Affairs"
+    ]
+  },
+  "high_breach_offices": [
+    "Finance",
+    "Scholarship Office"
+  ]
+}

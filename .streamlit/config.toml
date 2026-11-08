@@ -1,0 +1,14 @@
+[theme]
+primaryColor = "#2f67a5"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f5f8fc"
+textColor = "#172b45"
+
+[theme.sidebar]
+primaryColor = "#8ebbea"
+backgroundColor = "#142b4a"
+secondaryBackgroundColor = "#203e61"
+textColor = "#f8fbff"
+
+[server]
+headless = true
